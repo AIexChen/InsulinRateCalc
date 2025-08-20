@@ -8,7 +8,7 @@ document.getElementById("processBtn").addEventListener("click", () => {
   const numberRegex = /^\d+(\.\d+)?$/;
 
   if (!numberRegex.test(input1) || !numberRegex.test(input2) || !numberRegex.test(input3)) {
-    document.getElementById("output").textContent = "Please enter valid positive numbers (e.g. 7.0, 1). Do not type units.";
+    document.getElementById("output").textContent = "Please enter valid positive numbers (e.g. 7.0, 1). Do not type units or other unique characters such as commas or slashes.";
     return;
   }
 
