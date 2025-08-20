@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insulin Infusion Rate Adjustment Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Insulin Infusion Rate Adjustment Calculator</h1>
+    <p>This calculator is purely intended as a reference for adjusting the rate of regular (human) insulin infused via IV at 1 unit/mL.</p>
+    <hr>
+
+    <div class="input-group">
+      <label for="input1">Previous Blood Glucose Reading (mmol/L):</label>
+      <input type="text" id="input1" placeholder="Enter first text">
+    </div>
+
+    <div class="input-group">
+      <label for="input2">Current Blood Glucose Reading (mmol/L):</label>
+      <input type="text" id="input2" placeholder="Enter second text">
+    </div>
+
+    <div class="input-group">
+      <label for="input3">Current Insulin Infusion Rate (unit/mL IV):</label>
+      <input type="text" id="input3" placeholder="Enter third text">
+    </div>
+
+    <button id="processBtn">Calculate</button>
+
+    <div class="result">
+      <h2>Result:</h2>
+      <p id="output"></p>
+    </div>
+
+    <br>
+    <hr>
+    <details>
+      <summary>Image Reference Chart (click to expand):</summary>
+      <img src="insulinratecalcchart.jpeg" style="max-width: 100%; height: auto;" alt="Insulin Rate Adjustment Chart" /img>
+    </details>
+    <p> The creator of this tool is not liable for the choices of healthcare professionals made using this tool. It does not substitute clinical judgement and derives its results solely from a single table of predetermined values.</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
